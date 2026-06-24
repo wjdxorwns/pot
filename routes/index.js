@@ -40,6 +40,11 @@ var portfolio = {
       group: 'Infra & Tools',
       items: ['AWS (EC2 · RDS · S3)', 'OCI', 'Docker', 'Nginx', 'Apache Tomcat',
         'Git / GitHub', 'TossPayments', 'Firebase', 'IntelliJ · Figma']
+    },
+    {
+      group: 'AI 활용',
+      items: ['Claude Code', 'MCP (Model Context Protocol)', 'AI 페어 프로그래밍',
+        '프롬프트 엔지니어링', 'AI 코드 리뷰']
     }
   ],
 

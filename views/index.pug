@@ -125,7 +125,7 @@ block content
         h2.section__title 경력과 자격
         .career-grid
           .career-col
-            h3.career-col__title 재직 중
+            h3.career-col__title 경력
             ul.timeline
               each x in p.experiences
                 li.timeline__item.timeline__item--work
@@ -134,8 +134,6 @@ block content
                     = x.company
                     span.timeline__role= x.role
                   span.timeline__desc= x.desc
-            h3.career-col__title.career-col__title--mt 경력
-            ul.timeline
               each c in p.careers
                 li.timeline__item
                   span.timeline__period= c.period

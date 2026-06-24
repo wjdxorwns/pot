@@ -1,0 +1,168 @@
+extends layout
+
+block content
+  //- 상단 네비게이션
+  header.nav
+    .nav__inner
+      a.nav__logo(href='#top') #{p.name}.
+      nav.nav__menu
+        a(href='#about') 소개
+        a(href='#stack') 기술스택
+        a(href='#projects') 프로젝트
+        a(href='#trouble') 트러블슈팅
+        a(href='#career') 경력·자격
+      a.nav__cta(href='mailto:' + p.email) 연락하기
+
+  main#top
+    //- 히어로
+    section.hero
+      .container
+        span.hero__badge ● Available for work · 신입 개발자
+        h1.hero__title
+          | 안녕하세요,
+          br
+          | 풀스택 개발자 #[span.accent #{p.name}]입니다.
+        p.hero__tagline= p.tagline
+        .hero__actions
+          a.btn.btn--primary(href='#projects') 프로젝트 보기
+          a.btn.btn--ghost(href='mailto:' + p.email) #{p.email}
+        .hero__stats
+          each h in p.highlights
+            .stat
+              span.stat__num= h.num
+              span.stat__label= h.label
+
+    //- 소개
+    section#about.section
+      .container
+        span.section__eyebrow ABOUT
+        h2.section__title 저는 이런 개발자예요
+        p.section__lead= p.intro
+
+    //- 기술 스택
+    section#stack.section.section--gray
+      .container
+        span.section__eyebrow TECH STACK
+        h2.section__title 사용하는 기술
+        .stack-grid
+          each s in p.stacks
+            .stack-card
+              h3.stack-card__title= s.group
+              .chips
+                each item in s.items
+                  span.chip= item
+
+    //- 실무 프로젝트
+    section#projects.section
+      .container
+        span.section__eyebrow WORK PROJECTS
+        h2.section__title 실무 프로젝트
+        p.section__lead 투모스(twomos)에서 진행한 커머스 · 구독 · LMS · 모바일 등 다양한 도메인의 서비스입니다.
+        .work-grid
+          each w in p.workProjects
+            article(class='work-card' + (w.solo ? ' work-card--solo' : ''))
+              if w.solo
+                span.work-card__badge 단독 개발
+              h3.work-card__title= w.title
+              span.work-card__stack= w.stack
+              p.work-card__desc= w.desc
+              .chips.chips--sm
+                each t in w.tags
+                  span.chip.chip--blue= t
+
+    //- 교육 프로젝트
+    section#edu.section.section--gray
+      .container
+        span.section__eyebrow TEAM PROJECTS
+        h2.section__title 교육 팀 프로젝트
+        p.section__lead 한국ICT인재개발원 과정에서 PL·팀장으로 기획부터 개발까지 이끈 프로젝트입니다.
+        each proj in p.eduProjects
+          article.project
+            .project__head
+              h3.project__title= proj.title
+              span.project__period= proj.period
+            span.project__role= proj.role
+            p.project__summary= proj.summary
+            ul.project__points
+              each point in proj.points
+                li= point
+            .chips.chips--sm
+              each t in proj.tags
+                span.chip.chip--blue= t
+
+    //- 트러블 슈팅
+    section#trouble.section
+      .container
+        span.section__eyebrow TROUBLE SHOOTING
+        h2.section__title 문제를 이렇게 풀었어요
+        .trouble-list
+          each t, i in p.troubles
+            article.trouble
+              .trouble__index 0#{i + 1}
+              .trouble__body
+                .trouble__head
+                  if t.project
+                    span.trouble__tag= t.project
+                  h3.trouble__title= t.title
+                dl.trouble__rows
+                  .trouble__row
+                    dt 문제
+                    dd= t.problem
+                  .trouble__row
+                    dt 원인
+                    dd= t.cause
+                  .trouble__row
+                    dt 해결
+                    dd= t.solution
+                  .trouble__row.trouble__row--result
+                    dt 결과
+                    dd= t.result
+
+    //- 경력 · 자격
+    section#career.section.section--gray
+      .container
+        span.section__eyebrow CAREER & CERTIFICATE
+        h2.section__title 경력과 자격
+        .career-grid
+          .career-col
+            h3.career-col__title 경력
+            ul.timeline
+              each x in p.experiences
+                li.timeline__item.timeline__item--work
+                  span.timeline__period= x.period
+                  span.timeline__name
+                    = x.company
+                    span.timeline__role= x.role
+                  span.timeline__desc= x.desc
+            h3.career-col__title.career-col__title--mt 교육 · 학력
+            ul.timeline
+              each e in p.educations
+                li.timeline__item
+                  span.timeline__period= e.period
+                  span.timeline__name= e.name
+                  span.timeline__desc= e.desc
+            h3.career-col__title.career-col__title--mt 수상
+            .chips
+              each a in p.awards
+                span.chip.chip--blue= a
+          .career-col
+            h3.career-col__title 자격증
+            ul.cert-list
+              each c in p.certs
+                li.cert
+                  span.cert__name= c.name
+                  span.cert__meta #{c.org} · #{c.date}
+
+    //- CTA
+    section.cta
+      .container.cta__inner
+        h2.cta__title 함께 성장하고 싶어요
+        p.cta__sub 새로운 기회와 협업을 환영합니다.
+        .cta__contact
+          a.btn.btn--primary.btn--lg(href='mailto:' + p.email) 메일 보내기
+          span.cta__phone= p.phone
+
+  footer.footer
+    .container
+      span © 2026 #{p.name}. Built with Express & Pug.
+      a(href='mailto:' + p.email)= p.email

@@ -17,7 +17,7 @@ var portfolio = {
   highlights: [
     { num: '2', label: 'BDNS · 현관앞 키친 단독 개발' },
     { num: 'Full', label: '백엔드 · 프론트 · 모바일 · DB' },
-    { num: '7+', label: '실무 · 교육 프로젝트 참여' }
+    { num: '8', label: '실무 · 교육 프로젝트 참여' }
   ],
 
   // 기술 스택

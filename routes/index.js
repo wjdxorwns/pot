@@ -24,7 +24,7 @@ var portfolio = {
   stacks: [
     {
       group: 'Backend',
-      items: ['Java 17 / 21', 'Kotlin', 'Python', 'Spring Boot 3', 'Spring Security',
+      items: ['Java 17 / 21', 'Kotlin', 'Spring Boot 3', 'Spring Security',
         'Spring Modulith', 'JPA / Hibernate', 'QueryDSL', 'MyBatis', 'NestJS', 'Node.js']
     },
     {

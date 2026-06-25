@@ -84,9 +84,9 @@ var portfolio = {
     },
     {
       title: 'RecordGuard (황금후추) — 녹화 방지',
-      stack: 'Python · PyInstaller · NSIS',
+      stack: 'PyInstaller · NSIS · Windows',
       desc: '강의 화면 녹화를 감지·차단하는 Windows 데스크톱 프로그램. 시스템 트레이 백그라운드 실행과 로컬 REST API 상태 체크를 제공합니다.',
-      tags: ['Python', 'Desktop', 'System Tray', 'REST']
+      tags: ['Desktop', 'System Tray', 'REST', 'NSIS']
     }
   ],
 

@@ -24,8 +24,8 @@ var portfolio = {
   stacks: [
     {
       group: 'Backend',
-      items: ['Java 17 / 21', 'Python', 'Spring Boot 3', 'Spring Security',
-        'JPA / Hibernate', 'QueryDSL', 'MyBatis', 'NestJS', 'Node.js']
+      items: ['Java 17 / 21', 'Kotlin', 'Python', 'Spring Boot 3', 'Spring Security',
+        'Spring Modulith', 'JPA / Hibernate', 'QueryDSL', 'MyBatis', 'NestJS', 'Node.js']
     },
     {
       group: 'Frontend & Mobile',
@@ -65,6 +65,12 @@ var portfolio = {
       solo: true
     },
     {
+      title: 'S-in — 셀러 커머스 플랫폼',
+      stack: 'Spring Boot · Kotlin · React 19',
+      desc: 'Spring Modulith로 도메인을 모듈 단위로 분리한 셀러 커머스 플랫폼. 백오피스·사용자 프론트엔드(React)와 백엔드 도메인 기능을 개발하고, CQRS·Dual-ID 설계로 확장성을 확보했습니다.',
+      tags: ['Kotlin', 'Spring Modulith', 'CQRS', 'React 19']
+    },
+    {
       title: 'IMWEB LMS / RunRun — 온라인 강의',
       stack: 'NestJS · Prisma · React · Vimeo API',
       desc: '아임웹 플러그인샵 기반 구독형 LMS. siteId 멀티테넌트 격리, 역할 기반 접근 제어, Vimeo 영상 연동과 진도·수료증 관리를 구현했습니다.',
@@ -77,7 +83,7 @@ var portfolio = {
       tags: ['Flutter', 'Riverpod', 'Firebase', 'TossPay']
     },
     {
-      title: 'RecordGuard (골드페퍼) — 녹화 방지',
+      title: 'RecordGuard (황금후추) — 녹화 방지',
       stack: 'Python · PyInstaller · NSIS',
       desc: '강의 화면 녹화를 감지·차단하는 Windows 데스크톱 프로그램. 시스템 트레이 백그라운드 실행과 로컬 REST API 상태 체크를 제공합니다.',
       tags: ['Python', 'Desktop', 'System Tray', 'REST']

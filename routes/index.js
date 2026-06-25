@@ -15,7 +15,7 @@ var portfolio = {
 
   // 핵심 요약 지표
   highlights: [
-    { num: '2', label: 'BDNS · 도어키친 단독 개발' },
+    { num: '2', label: 'BDNS · 현관앞 키친 단독 개발' },
     { num: 'Full', label: '백엔드 · 프론트 · 모바일 · DB' },
     { num: '7+', label: '실무 · 교육 프로젝트 참여' }
   ],
@@ -58,7 +58,7 @@ var portfolio = {
       solo: true
     },
     {
-      title: '도어키친 — 구독 배송 + 아임웹 위젯',
+      title: '현관앞 키친 — 구독 배송 + 아임웹 위젯',
       stack: 'Spring Boot 3 · QueryDSL · React 19 · Next.js',
       desc: '음식 구독 배송 관리 시스템. 배송 가능 지역 체크, 공휴일 제외 자동 배송 스케줄링, 아임웹 OAuth 주문 동기화를 구현하고, 아임웹 페이지에 삽입되는 위젯 스크립트까지 직접 개발했습니다.',
       tags: ['QueryDSL', '아임웹 연동', '공휴일 스케줄러', '위젯'],
@@ -71,7 +71,7 @@ var portfolio = {
       tags: ['NestJS', 'Prisma', 'Multi-tenant', 'Vimeo']
     },
     {
-      title: 'Vrink (브링) — 음료 주문 앱',
+      title: 'Vrink (브링크) — 음료 주문 앱',
       stack: 'Flutter · Spring Boot · Firebase',
       desc: 'Flutter로 만든 음료 주문 모바일 앱. 2-step 주문 플로우, 토스페이먼츠 결제, 카카오/애플 소셜 로그인, Firebase 푸시 알림을 지원합니다.',
       tags: ['Flutter', 'Riverpod', 'Firebase', 'TossPay']
@@ -146,7 +146,7 @@ var portfolio = {
       result: '우회 표현까지 차단되어 커뮤니티 운영·모니터링 부담이 줄었습니다.'
     },
     {
-      project: '도어키친',
+      project: '현관앞 키친',
       title: '공휴일을 제외한 배송일 자동 계산',
       problem: '구독 배송일을 자동 생성할 때 공휴일·주말에도 배송일이 잡혀 운영자가 매번 수동으로 조정해야 했습니다.',
       cause: '단순히 주기(N일)만 더해 날짜를 계산했고, 공휴일 정보를 반영하지 않았습니다.',
@@ -154,7 +154,7 @@ var portfolio = {
       result: '운영자의 수기 조정이 사라지고, 배송 일정이 자동으로 정확하게 생성됐습니다.'
     },
     {
-      project: '도어키친',
+      project: '현관앞 키친',
       title: '주소 → 배송구역 자동 매핑 실패',
       problem: '회원 주소를 배송구역에 자동 매핑할 때 일부 주소가 매칭되지 않아 배송 가능 여부 판단이 어긋났습니다.',
       cause: '도로명·지번 주소 표기가 제각각이고, 일부 신주소가 구역과 바로 매칭되지 않았습니다.',
@@ -162,7 +162,7 @@ var portfolio = {
       result: '자동 매핑률이 올라가고, 매칭 실패 건도 누락 없이 관리할 수 있게 됐습니다.'
     },
     {
-      project: '도어키친',
+      project: '현관앞 키친',
       title: '아임웹 페이지 삽입 위젯의 로딩·도메인 이슈',
       problem: '아임웹 결제·마이페이지에 삽입한 위젯 스크립트가 일부 환경에서 로드되지 않거나 API 호출이 차단됐습니다.',
       cause: '외부 도메인(아임웹)에서 우리 API를 호출하면서 CORS 정책에 막혔고, 위젯 번들 경로·캐시 문제가 겹쳤습니다.',
@@ -170,7 +170,7 @@ var portfolio = {
       result: '아임웹 외부 페이지에서도 위젯이 안정적으로 동작하며 배송지역 체크가 정상화됐습니다.'
     },
     {
-      project: '도어키친',
+      project: '현관앞 키친',
       title: '아임웹 OAuth 토큰 만료·동시 갱신 경쟁',
       problem: '아임웹 API 호출 중 액세스 토큰이 만료되면 호출이 실패하고, 여러 요청이 동시에 토큰을 갱신하려다 충돌했습니다.',
       cause: '토큰 만료를 사전에 확인하지 않았고, 갱신 로직에 동시성 제어가 없었습니다.',
@@ -178,7 +178,7 @@ var portfolio = {
       result: '토큰 만료로 인한 API 실패가 사라지고 아임웹 연동이 안정적으로 유지됐습니다.'
     },
     {
-      project: '도어키친',
+      project: '현관앞 키친',
       title: '아임웹 주문 동기화 중복·누락',
       problem: '아임웹 webhook으로 주문을 받아 동기화할 때 같은 주문이 중복 저장되거나 일부가 누락됐습니다.',
       cause: 'webhook이 재전송될 수 있는데 멱등 처리가 없었고, 스케줄러 동기화와 시점이 겹치면서 충돌이 났습니다.',
@@ -201,7 +201,7 @@ var portfolio = {
       period: '2025.12.01 ~ 재직 중 · 약 7개월',
       company: '투모어스탭스 (Two More Steps)',
       role: '풀스택 개발자',
-      desc: '빠더너스 팬카페(BDNS), 도어키친 구독 배송 등 웹·앱 서비스의 백엔드·프론트엔드를 ' +
+      desc: '빠더너스 팬카페(BDNS), 현관앞 키친 구독 배송 등 웹·앱 서비스의 백엔드·프론트엔드를 ' +
         '단독 또는 팀으로 개발하고 운영. Spring Boot · React · Flutter 기반 실서비스를 직접 설계·구현했습니다.'
     }
   ],

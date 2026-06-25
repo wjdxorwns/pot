@@ -24,8 +24,8 @@ var portfolio = {
   stacks: [
     {
       group: 'Backend',
-      items: ['Java 17 / 21', 'Kotlin', 'Python', 'Spring Boot 3', 'Spring Security',
-        'Spring Modulith', 'JPA / Hibernate', 'QueryDSL', 'MyBatis', 'NestJS', 'Node.js']
+      items: ['Java 17 / 21', 'Python', 'Spring Boot 3', 'Spring Security',
+        'JPA / Hibernate', 'QueryDSL', 'MyBatis', 'NestJS', 'Node.js']
     },
     {
       group: 'Frontend & Mobile',
@@ -63,12 +63,6 @@ var portfolio = {
       desc: '음식 구독 배송 관리 시스템. 배송 가능 지역 체크, 공휴일 제외 자동 배송 스케줄링, 아임웹 OAuth 주문 동기화를 구현하고, 아임웹 페이지에 삽입되는 위젯 스크립트까지 직접 개발했습니다.',
       tags: ['QueryDSL', '아임웹 연동', '공휴일 스케줄러', '위젯'],
       solo: true
-    },
-    {
-      title: 'S-in (셀러인) — 셀러 커머스 플랫폼',
-      stack: 'Spring Boot · Kotlin · React 19',
-      desc: 'Spring Modulith로 도메인을 모듈 단위로 분리한 셀러 커머스 플랫폼. 백오피스·사용자 프론트엔드(React)와 백엔드 도메인 기능을 개발하고, CQRS·Dual-ID 설계로 확장성을 확보했습니다.',
-      tags: ['Kotlin', 'Spring Modulith', 'CQRS', 'React 19']
     },
     {
       title: 'IMWEB LMS / RunRun — 온라인 강의',

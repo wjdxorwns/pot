@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* 포트폴리오 데이터 — 이력서 기반 (정택준) */
 var portfolio = {
-  name: '정택준',
+  name: '  정택준',
   role: 'Full-Stack Developer',
   tagline: '자세는 낮게, 실력은 깊고 넓게.',
   intro: '기획부터 일정 관리, 개발까지 직접 이끌어 본 신입 풀스택 개발자입니다. ' +

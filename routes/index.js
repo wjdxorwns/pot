@@ -15,7 +15,7 @@ var portfolio = {
 
   // 핵심 요약 지표
   highlights: [
-    { num: '2', label: 'BDNS · 현관앞 키친 단독 개발' },
+    { num: '2', label: '팬 커뮤니티·구독 배송 서비스 단독 개발' },
     { num: 'Full', label: '백엔드 · 프론트 · 모바일 · DB' },
     { num: '8', label: '실무 · 교육 프로젝트 참여' }
   ],
@@ -48,45 +48,45 @@ var portfolio = {
     }
   ],
 
-  // 실무 프로젝트 (twomos)
+  // 실무 프로젝트
   workProjects: [
     {
-      title: 'BDNS — 빠더너스 팬카페 커뮤니티',
+      title: '팬 커뮤니티 서비스',
       stack: 'Spring Boot 3 · Java 21 · JPA · React 19',
-      desc: '게시판 형식의 팬카페 커뮤니티 플랫폼. 백오피스와 엔드유저 앱을 하나의 백엔드로 서비스하며, 게시글·댓글·반응, 신고 처리 워크플로우, 실시간 채팅(금칙어 필터), 출석, Vimeo 강의, 대시보드 통계까지 직접 설계·구현했습니다.',
-      tags: ['팬카페', '게시판', 'JWT', 'WebSocket', 'Vimeo'],
+      desc: '게시판 기반 팬 커뮤니티 플랫폼. 게시글·댓글·반응, 신고 처리, 실시간 채팅, 출석, 강의 시청, 대시보드 통계 등 서비스 전반을 설계·구현했습니다.',
+      tags: ['커뮤니티', '게시판', 'JWT', 'WebSocket'],
       solo: true
     },
     {
-      title: '현관앞 키친 — 구독 배송 + 아임웹 위젯',
+      title: '구독 배송 서비스',
       stack: 'Spring Boot 3 · QueryDSL · React 19 · Next.js',
-      desc: '음식 구독 배송 관리 시스템. 배송 가능 지역 체크, 공휴일 제외 자동 배송 스케줄링, 아임웹 OAuth 주문 동기화를 구현하고, 아임웹 페이지에 삽입되는 위젯 스크립트까지 직접 개발했습니다.',
-      tags: ['QueryDSL', '아임웹 연동', '공휴일 스케줄러', '위젯'],
+      desc: '음식 구독 배송 관리 시스템. 배송 가능 지역 체크, 공휴일을 고려한 자동 배송 스케줄링, 외부 플랫폼과의 주문 연동 위젯을 개발했습니다.',
+      tags: ['QueryDSL', '스케줄러', '위젯'],
       solo: true
     },
     {
-      title: 'S-in — 셀러 커머스 플랫폼',
+      title: '셀러 커머스 플랫폼',
       stack: 'Spring Boot · Kotlin · React 19',
-      desc: 'Spring Modulith로 도메인을 모듈 단위로 분리한 셀러 커머스 플랫폼. 백오피스·사용자 프론트엔드(React)와 백엔드 도메인 기능을 개발하고, CQRS·Dual-ID 설계로 확장성을 확보했습니다.',
-      tags: ['Kotlin', 'Spring Modulith', 'CQRS', 'React 19']
+      desc: '셀러 입점형 커머스 플랫폼의 백오피스·사용자 프론트엔드(React)와 백엔드 도메인 기능을 개발했습니다.',
+      tags: ['Kotlin', 'React 19', 'Backend', 'Frontend']
     },
     {
-      title: 'IMWEB LMS / RunRun — 온라인 강의',
-      stack: 'NestJS · Prisma · React · Vimeo API',
-      desc: '아임웹 플러그인샵 기반 구독형 LMS. siteId 멀티테넌트 격리, 역할 기반 접근 제어, Vimeo 영상 연동과 진도·수료증 관리를 구현했습니다.',
-      tags: ['NestJS', 'Prisma', 'Multi-tenant', 'Vimeo']
+      title: '구독형 온라인 강의 플랫폼',
+      stack: 'NestJS · Prisma · React',
+      desc: '멀티테넌트 구조의 구독형 온라인 강의 서비스. 역할 기반 접근 제어와 강의 영상 연동, 진도·수료증 관리를 구현했습니다.',
+      tags: ['NestJS', 'Prisma', 'Multi-tenant']
     },
     {
-      title: 'Vrink (브링크) — 음료 주문 앱',
+      title: '음료 주문 앱',
       stack: 'Flutter · Spring Boot · Firebase',
-      desc: 'Flutter로 만든 음료 주문 모바일 앱. 2-step 주문 플로우, 토스페이먼츠 결제, 카카오/애플 소셜 로그인, Firebase 푸시 알림을 지원합니다.',
-      tags: ['Flutter', 'Riverpod', 'Firebase', 'TossPay']
+      desc: 'Flutter 기반 음료 주문 모바일 앱. 주문 플로우, 결제 연동, 소셜 로그인, 푸시 알림 기능을 지원합니다.',
+      tags: ['Flutter', 'Firebase', 'Mobile']
     },
     {
-      title: 'RecordGuard (황금후추) — 녹화 방지',
-      stack: 'PyInstaller · NSIS · Windows',
-      desc: '강의 화면 녹화를 감지·차단하는 Windows 데스크톱 프로그램. 시스템 트레이 백그라운드 실행과 로컬 REST API 상태 체크를 제공합니다.',
-      tags: ['Desktop', 'System Tray', 'REST', 'NSIS']
+      title: '녹화 방지 데스크톱 프로그램',
+      stack: 'Windows Desktop',
+      desc: '강의 화면 녹화를 감지·차단하는 Windows 데스크톱 프로그램을 개발했습니다.',
+      tags: ['Desktop', 'Windows']
     }
   ],
 
@@ -128,7 +128,7 @@ var portfolio = {
   // 트러블 슈팅 (실무 프로젝트 기반)
   troubles: [
     {
-      project: 'BDNS',
+      project: '팬 커뮤니티',
       title: '실시간 채팅 메시지 누락·순서 꼬임',
       problem: '팬카페 실시간 채팅에서 동시 접속이 늘면 메시지가 간헐적으로 누락되거나 표시 순서가 뒤바뀌었습니다.',
       cause: 'WebSocket 세션 관리와 클라이언트 렌더링 방식이 동시 접속 트래픽을 고려하지 못했습니다.',
@@ -136,7 +136,7 @@ var portfolio = {
       result: '동시 접속 상황에서도 메시지 누락 없이 순서가 보장되어 채팅이 안정화됐습니다.'
     },
     {
-      project: 'BDNS',
+      project: '팬 커뮤니티',
       title: '게시글 좋아요·조회수 동시성 정합성',
       problem: '인기 게시글에 좋아요·조회 요청이 몰리면 카운트가 실제보다 적게 집계되는 문제가 있었습니다.',
       cause: '동시 요청이 몰릴 때 카운트 갱신 방식이 정합성을 보장하지 못했습니다(lost update).',
@@ -144,7 +144,7 @@ var portfolio = {
       result: '동시 트래픽에서도 좋아요·조회수가 정확히 집계되어 통계 신뢰도가 올라갔습니다.'
     },
     {
-      project: 'BDNS',
+      project: '팬 커뮤니티',
       title: '금칙어 필터 우회 표현 차단',
       problem: '채팅·게시글에서 변형된 표현으로 필터를 우회하는 경우가 있었습니다.',
       cause: '단순 매칭 방식만 사용해 변형된 표현을 걸러내지 못했습니다.',
@@ -152,7 +152,7 @@ var portfolio = {
       result: '우회 표현까지 차단되어 커뮤니티 운영·모니터링 부담이 줄었습니다.'
     },
     {
-      project: '현관앞 키친',
+      project: '구독 배송',
       title: '공휴일을 제외한 배송일 자동 계산',
       problem: '구독 배송일을 자동 생성할 때 공휴일·주말에도 배송일이 잡혀 운영자가 매번 수동으로 조정해야 했습니다.',
       cause: '날짜 계산 로직이 공휴일 정보를 반영하지 않았습니다.',
@@ -160,7 +160,7 @@ var portfolio = {
       result: '운영자의 수기 조정이 사라지고, 배송 일정이 자동으로 정확하게 생성됐습니다.'
     },
     {
-      project: '현관앞 키친',
+      project: '구독 배송',
       title: '주소 → 배송구역 자동 매핑 실패',
       problem: '회원 주소를 배송구역에 자동 매핑할 때 일부 주소가 매칭되지 않아 배송 가능 여부 판단이 어긋났습니다.',
       cause: '주소 표기 방식이 제각각이라 일부 주소가 구역과 바로 매칭되지 않았습니다.',
@@ -168,7 +168,7 @@ var portfolio = {
       result: '자동 매핑률이 올라가고, 매칭 실패 건도 누락 없이 관리할 수 있게 됐습니다.'
     },
     {
-      project: '현관앞 키친',
+      project: '구독 배송',
       title: '외부 플랫폼 삽입 위젯의 로딩 이슈',
       problem: '외부 플랫폼 페이지에 삽입한 위젯 스크립트가 일부 환경에서 로드되지 않거나 API 호출이 차단됐습니다.',
       cause: '외부 도메인 호출 시 CORS 정책과 번들 배포 구조가 맞지 않았습니다.',
@@ -176,7 +176,7 @@ var portfolio = {
       result: '외부 페이지에서도 위젯이 안정적으로 동작하며 배송지역 체크가 정상화됐습니다.'
     },
     {
-      project: '현관앞 키친',
+      project: '구독 배송',
       title: '외부 연동 인증 토큰 만료 이슈',
       problem: '외부 플랫폼 API 호출 중 인증 토큰이 만료되면 호출이 실패하는 경우가 있었습니다.',
       cause: '토큰 만료를 사전에 확인하지 않고 있었습니다.',
@@ -184,7 +184,7 @@ var portfolio = {
       result: '토큰 만료로 인한 API 실패가 사라지고 외부 연동이 안정적으로 유지됐습니다.'
     },
     {
-      project: '현관앞 키친',
+      project: '구독 배송',
       title: '외부 플랫폼 주문 동기화 중복·누락',
       problem: '외부 플랫폼 주문을 동기화할 때 같은 주문이 중복 저장되거나 일부가 누락됐습니다.',
       cause: '동기화 처리 방식이 재전송·중복 상황을 고려하지 못했습니다.',
@@ -192,7 +192,7 @@ var portfolio = {
       result: '중복·누락이 사라지고 주문 데이터가 일관되게 유지됐습니다.'
     },
     {
-      project: 'IMWEB LMS',
+      project: '온라인 강의 플랫폼',
       title: '대용량 강의 영상 업로드 실패·재시도',
       problem: '강사가 큰 강의 영상을 올릴 때 네트워크가 끊기면 처음부터 다시 업로드해야 했습니다.',
       cause: '단일 요청으로 전체 파일을 전송해, 중간 실패 시 이어서 올릴 방법이 없었습니다.',
@@ -205,9 +205,9 @@ var portfolio = {
   experiences: [
     {
       period: '2025.12.01 ~ 재직 중 · 약 7개월',
-      company: '투모어스탭스 (Two More Steps)',
+      company: '스타트업 재직 중 (비공개)',
       role: '풀스택 개발자',
-      desc: '빠더너스 팬카페(BDNS), 현관앞 키친 구독 배송 등 웹·앱 서비스의 백엔드·프론트엔드를 ' +
+      desc: '팬 커뮤니티, 구독 배송 등 웹·앱 서비스의 백엔드·프론트엔드를 ' +
         '단독 또는 팀으로 개발하고 운영. Spring Boot · React · Flutter 기반 실서비스를 직접 설계·구현했습니다.'
     }
   ],

@@ -17,7 +17,7 @@ var portfolio = {
   highlights: [
     { num: '2', label: '팬 커뮤니티·구독 배송 서비스 단독 개발' },
     { num: 'Full', label: '백엔드 · 프론트 · 모바일 · DB' },
-    { num: '8', label: '실무 · 교육 프로젝트 참여' }
+    { num: '9', label: '실무 · 교육 프로젝트 참여' }
   ],
 
   // 기술 스택
@@ -51,33 +51,33 @@ var portfolio = {
   // 실무 프로젝트
   workProjects: [
     {
-      title: '팬 커뮤니티 서비스',
+      title: 'B연예인 팬 커뮤니티 서비스',
       stack: 'Spring Boot 3 · Java 21 · JPA · React 19',
       desc: '게시판 기반 팬 커뮤니티 플랫폼. 게시글·댓글·반응, 신고 처리, 실시간 채팅, 출석, 강의 시청, 대시보드 통계 등 서비스 전반을 설계·구현했습니다.',
       tags: ['커뮤니티', '게시판', 'JWT', 'WebSocket'],
       solo: true
     },
     {
-      title: '구독 배송 서비스',
+      title: 'H 구독 배송 서비스',
       stack: 'Spring Boot 3 · QueryDSL · React 19 · Next.js',
       desc: '음식 구독 배송 관리 시스템. 배송 가능 지역 체크, 공휴일을 고려한 자동 배송 스케줄링, 외부 플랫폼과의 주문 연동 위젯을 개발했습니다.',
       tags: ['QueryDSL', '스케줄러', '위젯'],
       solo: true
     },
     {
-      title: '셀러 커머스 플랫폼',
+      title: 'S 셀러 커머스 플랫폼',
       stack: 'Spring Boot · Kotlin · React 19',
       desc: '셀러 입점형 커머스 플랫폼의 백오피스·사용자 프론트엔드(React)와 백엔드 도메인 기능을 개발했습니다.',
       tags: ['Kotlin', 'React 19', 'Backend', 'Frontend']
     },
     {
-      title: '구독형 온라인 강의 플랫폼',
+      title: 'L 구독형 온라인 강의 플랫폼',
       stack: 'NestJS · Prisma · React',
       desc: '멀티테넌트 구조의 구독형 온라인 강의 서비스. 역할 기반 접근 제어와 강의 영상 연동, 진도·수료증 관리를 구현했습니다.',
       tags: ['NestJS', 'Prisma', 'Multi-tenant']
     },
     {
-      title: '음료 주문 앱',
+      title: 'Vrink',
       stack: 'Flutter · Spring Boot · Firebase',
       desc: 'Flutter 기반 음료 주문 모바일 앱. 주문 플로우, 결제 연동, 소셜 로그인, 푸시 알림 기능을 지원합니다.',
       tags: ['Flutter', 'Firebase', 'Mobile']
@@ -87,7 +87,12 @@ var portfolio = {
       stack: 'Windows Desktop',
       desc: '강의 화면 녹화를 감지·차단하는 Windows 데스크톱 프로그램을 개발했습니다.',
       tags: ['Desktop', 'Windows']
+    },
+    {title:'코코호두',
+     stack: 'Spring Boot · Next.js',
+     desc: '상품 판매 페이지 및 백오피스 개발을 하였습니다',
     }
+
   ],
 
   // 교육 프로젝트 (한국ICT인재개발원 팀 프로젝트)
@@ -204,16 +209,24 @@ var portfolio = {
   // 재직 중
   experiences: [
     {
-      period: '2025.12.01 ~ 재직 중 · 약 7개월',
-      company: '스타트업 재직 중 (비공개)',
+      period: '2026.08.03 ~ 재직중 · 약 1개월',
+      company: 'vrink',
       role: '풀스택 개발자',
-      desc: '팬 커뮤니티, 구독 배송 등 웹·앱 서비스의 백엔드·프론트엔드를 ' +
+      desc: '플러터 기반의 키오스크 개발 및 웹개발을 구현중입니다' +
         '단독 또는 팀으로 개발하고 운영. Spring Boot · React · Flutter 기반 실서비스를 직접 설계·구현했습니다.'
     }
   ],
 
   // 이전 경력
   careers: [
+        {
+           period: '2025.11.10 ~ 2026.08.03 · 약 9개월',
+           company: 'Two-More-steps',
+           role: '풀스택 개발자',
+           desc: '팬 커뮤니티, 구독 배송 등 웹·앱 서비스의 백엔드·프론트엔드를 ' +
+             '단독 또는 팀으로 개발하고 운영. Spring Boot · React · Flutter 기반 실서비스를 직접 설계·구현했습니다.'
+         },
+
     {
       period: '2024.05 ~ 2025.11',
       company: '㈜GS25',

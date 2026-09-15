@@ -88,11 +88,12 @@ var portfolio = {
       desc: '강의 화면 녹화를 감지·차단하는 Windows 데스크톱 프로그램을 개발했습니다.',
       tags: ['Desktop', 'Windows']
     },
-    {title:'코코호두',
-     stack: 'Spring Boot · Next.js',
-     desc: '상품 판매 페이지 및 백오피스 개발을 하였습니다',
+    {
+      title: '코코호두',
+      stack: 'Spring Boot · Next.js',
+      desc: '상품 판매 페이지 및 백오피스 개발을 하였습니다',
+      tags: ['Spring Boot', 'Next.js']
     }
-
   ],
 
   // 교육 프로젝트 (한국ICT인재개발원 팀 프로젝트)
